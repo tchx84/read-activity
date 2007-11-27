@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-17 20:52+0100\n"
-"PO-Revision-Date: 2007-11-27 21:39+0000\n"
+"PO-Revision-Date: 2007-11-21 03:27+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,53 +18,53 @@ msgstr ""
 
 #: activity/activity.info:2 readactivity.py:84
 msgid "Read"
-msgstr "[ڃЦӳսКﻼԲ]Яչдԃ"
+msgstr "[ﻛ օƵј Јձ]ЯєаԺ"
 
 #: readactivity.py:80
 msgid "Edit"
-msgstr "[գӨ ѴЮ ЍیҰ]ЭԺւե"
+msgstr "[бВ أ ҍ]モԺآҭ"
 
 #: readactivity.py:88
 msgid "View"
-msgstr "[ЇҟцЭ ӴъЮ]Մآڿﺳ"
+msgstr "[ҍﺳ آڑ ڃ ]Ѵїещ"
 
 #: readtoolbar.py:60
 msgid "Previous"
-msgstr "[ԴՓ ҳ Ҿک ҁﯽ ŻДҬЦ ҟ ]Թҕڿѵﻨюцی"
+msgstr "[ҁ щЦքЎղИҕٲБФҏ]Ряэմւօцی"
 
 #: readtoolbar.py:67
 msgid "Next"
-msgstr "[أЯЊР ѵզﻻ ]Йәжт"
+msgstr "[Ҳе я ԳՕङ]Иչҳт"
 
 #: readtoolbar.py:105
 msgid "Back"
-msgstr "[ڑ Ցюәճ]Ъձۦҟ"
+msgstr "[حҟҵ ѓĐսՅ]Ъձҫќ"
 
 #: readtoolbar.py:112
 msgid "Forward"
-msgstr "[ӨէႧдѕںфЎҺѕ Օ]キօѓﺳձբժ"
+msgstr "[П խەъչگ Ƶu ۦԼѓप]ҒюяաаяԺ"
 
 #: readtoolbar.py:207
 msgid "Zoom out"
-msgstr "[اВ иҲ լи ҳ  مН Ѕм Яس ]Ƶююм օսէ"
+msgstr "[ГڑЂтĐҺ ԃワ ўэж ]Ƶююм юцե"
 
 #: readtoolbar.py:213
 msgid "Zoom in"
-msgstr "[प Ժ ѓҟ Щ  әШڿя ]Żююм آղ"
+msgstr "[مҲЎƵﻻ є  ТԿճո ]Ƶююм آи"
 
 #: readtoolbar.py:219
 msgid "Zoom to width"
-msgstr "[ҪйҧԼ ﯽմ ԲƵ  ﻻՀ ъв  Ըठ ոП३ ФԸӊ ]Ƶююм եю щїԃтप"
+msgstr "[ङдЌuщԲ ﻠҢЈ  ќՄपճўՓՑ Їս]Żюօм ٲօ шїժեप"
 
 #: readtoolbar.py:225
 msgid "Zoom to fit"
-msgstr "[ւ Ց Жऊ ҫՈ ѫ յ  ४ФРб]Ƶюօм ҭօ քւէ"
+msgstr "[АФЊ щհ  ԿԿ թ  Չц ٮմキ]Żююм тю ғւե"
 
 #: readtoolbar.py:230
 msgid "Actual size"
-msgstr "[Ҷ օйфՉ ցվаگцա աТآЅ аآ ҭ]АҁեٮձӀ ѕﻨƶչ"
+msgstr "[ҟ ЍјШ آчڈ ғ վƵТщкЄ]Дۦтцдլ یﻨƶэ"
 
 #: readtoolbar.py:248
 msgid "%"
-msgstr "[Ց]%"
+msgstr "[Жک ]%"
 
