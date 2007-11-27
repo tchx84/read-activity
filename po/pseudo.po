@@ -8,35 +8,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-06-21 17:41+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2007-11-17 20:52+0100\n"
+"PO-Revision-Date: 2007-11-27 21:39+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: XbookActivity.py:49 XbookActivity.py:140
-msgid "Read Activity"
-msgstr "[յЈ Й Ոѵ ҁՓ  یЩﻻ Բժﯽ لЊ Ц ճТєﻻ ]Яչаԃ Дҁٲїմїҭӳ"
+#: activity/activity.info:2 readactivity.py:84
+msgid "Read"
+msgstr "[ڃЦӳսКﻼԲ]Яչдԃ"
 
-#: XbookActivity.py:57
+#: readactivity.py:80
+msgid "Edit"
+msgstr "[գӨ ѴЮ ЍیҰ]ЭԺւե"
+
+#: readactivity.py:88
 msgid "View"
-msgstr "[ҰՏ ա uﻨ ]Մﻨэщ"
+msgstr "[ЇҟцЭ ӴъЮ]Մآڿﺳ"
 
-#: xbooktoolbar.py:56
-msgid "Back"
-msgstr "[ڿЮФҕҰ]Вдҫխ"
-
-#: xbooktoolbar.py:63
-msgid "Forward"
-msgstr "[ՑԺԿӀғ ĐЁցҟﺫڑК ]キօҕшձբԺ"
-
-#: xbooktoolbar.py:117
+#: readtoolbar.py:60
 msgid "Previous"
-msgstr "[حшՈ ї ३Өօфﻠ Ўا]Թբеѵւюцﯽ"
+msgstr "[ԴՓ ҳ Ҿک ҁﯽ ŻДҬЦ ҟ ]Թҕڿѵﻨюцی"
 
-#: xbooktoolbar.py:124
+#: readtoolbar.py:67
 msgid "Next"
-msgstr "[ҒеҤۦЩк հﺫ ]Пэжե"
+msgstr "[أЯЊР ѵզﻻ ]Йәжт"
+
+#: readtoolbar.py:105
+msgid "Back"
+msgstr "[ڑ Ցюәճ]Ъձۦҟ"
+
+#: readtoolbar.py:112
+msgid "Forward"
+msgstr "[ӨէႧдѕںфЎҺѕ Օ]キօѓﺳձբժ"
+
+#: readtoolbar.py:207
+msgid "Zoom out"
+msgstr "[اВ иҲ լи ҳ  مН Ѕм Яس ]Ƶююм օսէ"
+
+#: readtoolbar.py:213
+msgid "Zoom in"
+msgstr "[प Ժ ѓҟ Щ  әШڿя ]Żююм آղ"
+
+#: readtoolbar.py:219
+msgid "Zoom to width"
+msgstr "[ҪйҧԼ ﯽմ ԲƵ  ﻻՀ ъв  Ըठ ոП३ ФԸӊ ]Ƶююм եю щїԃтप"
+
+#: readtoolbar.py:225
+msgid "Zoom to fit"
+msgstr "[ւ Ց Жऊ ҫՈ ѫ յ  ४ФРб]Ƶюօм ҭօ քւէ"
+
+#: readtoolbar.py:230
+msgid "Actual size"
+msgstr "[Ҷ օйфՉ ցվаگцա աТآЅ аآ ҭ]АҁեٮձӀ ѕﻨƶչ"
+
+#: readtoolbar.py:248
+msgid "%"
+msgstr "[Ց]%"
 
