@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-17 20:52+0100\n"
-"PO-Revision-Date: 2007-11-25 18:34+0000\n"
+"PO-Revision-Date: 2007-12-01 09:02+0000\n"
 "Last-Translator: Shankar Pokharel <memshankar@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,52 +21,52 @@ msgstr "पढाई क्रियाकलाप "
 
 #: readactivity.py:88
 msgid "View"
-msgstr ""
+msgstr "दृश्य"
 
 #: readtoolbar.py:105
 msgid "Back"
-msgstr ""
+msgstr "पछाडि"
 
 #: readtoolbar.py:112
 msgid "Forward"
-msgstr ""
+msgstr "अगाडि"
 
 #: readtoolbar.py:60
 msgid "Previous"
-msgstr ""
+msgstr "अघिल्लो"
 
 #: readtoolbar.py:67
 msgid "Next"
-msgstr ""
+msgstr "अर्को"
 
 #: activity/activity.info:2 readactivity.py:84
 msgid "Read"
-msgstr ""
+msgstr "पढ"
 
 #: readactivity.py:80
 msgid "Edit"
-msgstr ""
+msgstr "सम्पादन गर"
 
 #: readtoolbar.py:207
 msgid "Zoom out"
-msgstr ""
+msgstr "जुम आउट"
 
 #: readtoolbar.py:213
 msgid "Zoom in"
-msgstr ""
+msgstr "जुम इन"
 
 #: readtoolbar.py:219
 msgid "Zoom to width"
-msgstr ""
+msgstr "चौडाई भर्ने जुम गर"
 
 #: readtoolbar.py:225
 msgid "Zoom to fit"
-msgstr ""
+msgstr "ठिक्क मिल्ने जुम गर"
 
 #: readtoolbar.py:230
 msgid "Actual size"
-msgstr ""
+msgstr "वास्तविक आकार"
 
 #: readtoolbar.py:248
 msgid "%"
-msgstr ""
+msgstr "%"
