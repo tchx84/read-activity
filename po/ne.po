@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-17 20:52+0100\n"
-"PO-Revision-Date: 2007-12-01 09:02+0000\n"
+"PO-Revision-Date: 2007-12-01 09:14+0000\n"
 "Last-Translator: Shankar Pokharel <memshankar@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,19 +49,19 @@ msgstr "सम्पादन गर"
 
 #: readtoolbar.py:207
 msgid "Zoom out"
-msgstr "जुम आउट"
+msgstr "सानो गराऊ"
 
 #: readtoolbar.py:213
 msgid "Zoom in"
-msgstr "जुम इन"
+msgstr "ठूलो गराऊ"
 
 #: readtoolbar.py:219
 msgid "Zoom to width"
-msgstr "चौडाई भर्ने जुम गर"
+msgstr "चौडाईभरि मिलाऊ"
 
 #: readtoolbar.py:225
 msgid "Zoom to fit"
-msgstr "ठिक्क मिल्ने जुम गर"
+msgstr "सबै देखाऊ"
 
 #: readtoolbar.py:230
 msgid "Actual size"
