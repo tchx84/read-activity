@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-09 00:31-0400\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
 "PO-Revision-Date: 2009-02-13 07:57-0500\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,74 +15,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0rc2\n"
 
-#: activity/activity.info:2 readactivity.py:129
+#: activity/activity.info:2 readactivity.py:130
 msgid "Read"
 msgstr "Đọc"
 
-#: readactivity.py:125
+#: readactivity.py:126
 msgid "Edit"
 msgstr "Sửa"
 
-#: readactivity.py:137
+#: readactivity.py:138
 msgid "View"
 msgstr "Xem"
 
-#: readactivity.py:223
+#: readactivity.py:225
 msgid "Choose document"
 msgstr "Chọn tài liệu"
 
-#: readtoolbar.py:67
+#: readtoolbar.py:69
 msgid "Previous"
 msgstr "Lùi"
 
-#: readtoolbar.py:74
+#: readtoolbar.py:76
 msgid "Next"
 msgstr "Tiếp"
 
-#: readtoolbar.py:140
+#: readtoolbar.py:154
 msgid "Find first"
 msgstr "Tìm mục đầu"
 
-#: readtoolbar.py:146
+#: readtoolbar.py:160
 msgid "Find previous"
 msgstr "Tìm trước"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
 msgstr "Tìm tiếp"
 
-#: readtoolbar.py:160
+#: readtoolbar.py:174
 msgid "Back"
 msgstr "Lùi"
 
-#: readtoolbar.py:167
+#: readtoolbar.py:181
 msgid "Forward"
 msgstr "Tiếp"
 
-#: readtoolbar.py:271
+#: readtoolbar.py:353
 msgid "Zoom out"
 msgstr "Thu nhỏ"
 
-#: readtoolbar.py:277
+#: readtoolbar.py:359
 msgid "Zoom in"
 msgstr "Phóng to"
 
-#: readtoolbar.py:283
+#: readtoolbar.py:365
 msgid "Zoom to width"
 msgstr "Phóng tới bề rộng"
 
-#: readtoolbar.py:289
+#: readtoolbar.py:371
 msgid "Zoom to fit"
 msgstr "Phóng vừa"
 
-#: readtoolbar.py:294
+#: readtoolbar.py:376
 msgid "Actual size"
 msgstr "Kích cỡ thật"
 
-#: readtoolbar.py:312
+#: readtoolbar.py:394
 msgid "%"
 msgstr "%"
 
-#: readtoolbar.py:330
+#: readtoolbar.py:412
 msgid "Fullscreen"
 msgstr "Toàn màn hình"
