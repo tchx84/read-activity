@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
+"PO-Revision-Date: 2009-11-24 13:26-0400\n"
+"Last-Translator: Ny Menavazana <menavazana@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: mg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 1.2.1\n"
+
+#: activity/activity.info:2 readactivity.py:130
+msgid "Read"
+msgstr "Vakio"
+
+#: readactivity.py:126
+msgid "Edit"
+msgstr "Ovaina"
+
+#: readactivity.py:138
+msgid "View"
+msgstr "Jereo"
+
+#: readactivity.py:225
+msgid "Choose document"
+msgstr "Mifidiana raki-tahiry"
+
+#: readtoolbar.py:69
+msgid "Previous"
+msgstr "Teo aloha"
+
+#: readtoolbar.py:76
+msgid "Next"
+msgstr "Manaraka"
+
+#: readtoolbar.py:154
+msgid "Find first"
+msgstr "Tadiavo ny voalohany"
+
+#: readtoolbar.py:160
+msgid "Find previous"
+msgstr "Tadiavo ny teo aloha"
+
+#: readtoolbar.py:162
+msgid "Find next"
+msgstr "Tadiavo ny manaraka"
+
+#: readtoolbar.py:174
+msgid "Back"
+msgstr "Miverena"
+
+#: readtoolbar.py:181
+msgid "Forward"
+msgstr "Mandrosoa"
+
+#: readtoolbar.py:353
+msgid "Zoom out"
+msgstr "Tomory lavitra"
+
+#: readtoolbar.py:359
+msgid "Zoom in"
+msgstr "Tomory akaiky"
+
+#: readtoolbar.py:365
+msgid "Zoom to width"
+msgstr "Tomory araka ny sakany"
+
+#: readtoolbar.py:371
+msgid "Zoom to fit"
+msgstr "Tomory hifintina"
+
+#: readtoolbar.py:376
+msgid "Actual size"
+msgstr "Refy tena izy"
+
+#: readtoolbar.py:394
+msgid "%"
+msgstr "%"
+
+#: readtoolbar.py:412
+msgid "Fullscreen"
+msgstr "Mahafeno efi-jery"
