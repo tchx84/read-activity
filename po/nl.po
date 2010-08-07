@@ -2,89 +2,155 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-29 17:36-0400\n"
-"PO-Revision-Date: 2008-10-26 04:02-0400\n"
+"POT-Creation-Date: 2010-01-20 23:23+0530\n"
+"PO-Revision-Date: 2010-08-07 21:36+0200\n"
 "Last-Translator: Myckel Habets <myckel@sdf.lonestar.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.1.0rc2\n"
+"X-Generator: Pootle 2.0.3\n"
 
-#: activity/activity.info:2 readactivity.py:130
+#: activity/activity.info:2
+#: /home/sayamindu/Work/Devel/read/readactivity.py:143
 msgid "Read"
 msgstr "Lezen"
 
-#: readactivity.py:126
+#: /home/sayamindu/Work/Devel/read/readactivity.py:139
 msgid "Edit"
 msgstr "Bewerken"
 
-#: readactivity.py:138
+#: /home/sayamindu/Work/Devel/read/readactivity.py:151
 msgid "View"
 msgstr "Beeld"
 
-#: readactivity.py:225
+#: /home/sayamindu/Work/Devel/read/readactivity.py:241
 msgid "Choose document"
 msgstr "Kies document"
 
-#: readtoolbar.py:69
+#. TRANS: Translate this as Page i of m (eg: Page 4 of 334)
+#: /home/sayamindu/Work/Devel/read/readtopbar.py:201
+#, python-format
+msgid "Page %i of %i"
+msgstr "Pagina %i van %i"
+
+#: /home/sayamindu/Work/Devel/read/readdialog.py:49
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: /home/sayamindu/Work/Devel/read/readdialog.py:55
+msgid "Ok"
+msgstr "Ok"
+
+#: /home/sayamindu/Work/Devel/read/readdialog.py:109
+msgid "<b>Title</b>:"
+msgstr "<b>Titel</b>:"
+
+#: /home/sayamindu/Work/Devel/read/readdialog.py:136
+msgid "<b>Details</b>:"
+msgstr "<b>Details</b>:"
+
+#. TRANS: This goes like Bookmark added by User 5 days ago (the elapsed string gets translated
+#. TRANS: automatically)
+#: /home/sayamindu/Work/Devel/read/readsidebar.py:83
+#, python-format
+msgid "Bookmark added by %(user)s %(time)s"
+msgstr "Bladwijzer toegevoegd door %(user)s %(time)s"
+
+#: /home/sayamindu/Work/Devel/read/readsidebar.py:124
+#: /home/sayamindu/Work/Devel/read/readsidebar.py:164
+msgid "Add notes for bookmark: "
+msgstr "Notitie voor bladwijzer toevoegen: "
+
+#: /home/sayamindu/Work/Devel/read/readsidebar.py:161
+#, python-format
+msgid "%s's bookmark"
+msgstr "%s's bladwijzer"
+
+#: /home/sayamindu/Work/Devel/read/readsidebar.py:162
+#, python-format
+msgid "Bookmark for page %d"
+msgstr "Bladwijzer voor pagina %d"
+
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:91
 msgid "Previous"
 msgstr "Vorige"
 
-#: readtoolbar.py:76
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:98
 msgid "Next"
 msgstr "Volgende"
 
-#: readtoolbar.py:154
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:184
 msgid "Find first"
 msgstr "Zoek eerste"
 
-#: readtoolbar.py:160
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:190
 msgid "Find previous"
 msgstr "Zoek vorige"
 
-#: readtoolbar.py:162
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:192
 msgid "Find next"
 msgstr "Zoek volgende"
 
-#: readtoolbar.py:174
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:205
 msgid "Back"
 msgstr "Terug"
 
-#: readtoolbar.py:181
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:208
+msgid "Previous page"
+msgstr "Vorige pagina"
+
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:211
+msgid "Previous bookmark"
+msgstr "Vorige bladwijzer"
+
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:221
 msgid "Forward"
 msgstr "Vooruit"
 
-#: readtoolbar.py:353
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:224
+msgid "Next page"
+msgstr "Volgende pagina"
+
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:227
+msgid "Next bookmark"
+msgstr "Volgende bladwijzer"
+
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:468
 msgid "Zoom out"
 msgstr "Zoom uit"
 
-#: readtoolbar.py:359
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:474
 msgid "Zoom in"
 msgstr "Zoom in"
 
-#: readtoolbar.py:365
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:480
 msgid "Zoom to width"
 msgstr "Zoom naar breedte"
 
-#: readtoolbar.py:371
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:486
 msgid "Zoom to fit"
 msgstr "Zoom naar hele pagina"
 
-#: readtoolbar.py:376
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:491
 msgid "Actual size"
 msgstr "Werkelijk formaat"
 
-#: readtoolbar.py:394
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:508
 msgid "%"
 msgstr "%"
 
-#: readtoolbar.py:412
+#: /home/sayamindu/Work/Devel/read/readtoolbar.py:521
 msgid "Fullscreen"
 msgstr "Schermvullend"
 
