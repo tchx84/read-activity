@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-23 20:36+0000\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,70 +16,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.0.1\n"
 
-#: XbookActivity.py:49 XbookActivity.py:140
-msgid "Read Activity"
-msgstr ""
+#: activity/activity.info:2 readactivity.py:130
+msgid "Read"
+msgstr "Read"
 
-#: readactivity.py:99
+#: readactivity.py:126
+msgid "Edit"
+msgstr "Edit"
+
+#: readactivity.py:138
 msgid "View"
-msgstr ""
+msgstr "View"
+
+#: readactivity.py:225
+msgid "Choose document"
+msgstr "Choose document"
+
+#: readtoolbar.py:69
+msgid "Previous"
+msgstr "Previous"
+
+#: readtoolbar.py:76
+msgid "Next"
+msgstr "Next"
+
+#: readtoolbar.py:154
+msgid "Find first"
+msgstr "Find first"
 
 #: readtoolbar.py:160
-msgid "Back"
-msgstr ""
-
-#: readtoolbar.py:167
-msgid "Forward"
-msgstr ""
-
-#: readtoolbar.py:67
-msgid "Previous"
-msgstr ""
-
-#: readtoolbar.py:74
-msgid "Next"
-msgstr ""
-
-#: activity/activity.info:2 readactivity.py:95
-msgid "Read"
-msgstr ""
-
-#: readactivity.py:91
-msgid "Edit"
-msgstr ""
-
-#: readtoolbar.py:262
-msgid "Zoom out"
-msgstr ""
-
-#: readtoolbar.py:268
-msgid "Zoom in"
-msgstr ""
-
-#: readtoolbar.py:274
-msgid "Zoom to width"
-msgstr ""
-
-#: readtoolbar.py:280
-msgid "Zoom to fit"
-msgstr ""
-
-#: readtoolbar.py:285
-msgid "Actual size"
-msgstr ""
-
-#: readtoolbar.py:303
-msgid "%"
-msgstr ""
-
-#: readtoolbar.py:140
-msgid "Find first"
-msgstr ""
-
-#: readtoolbar.py:146
 msgid "Find previous"
-msgstr ""
+msgstr "Find previous"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
-msgstr ""
+msgstr "Find next"
+
+#: readtoolbar.py:174
+msgid "Back"
+msgstr "Back"
+
+#: readtoolbar.py:181
+msgid "Forward"
+msgstr "Forward"
+
+#: readtoolbar.py:353
+msgid "Zoom out"
+msgstr "Zoom out"
+
+#: readtoolbar.py:359
+msgid "Zoom in"
+msgstr "Zoom in"
+
+#: readtoolbar.py:365
+msgid "Zoom to width"
+msgstr "Zoom to width"
+
+#: readtoolbar.py:371
+msgid "Zoom to fit"
+msgstr "Zoom to fit"
+
+#: readtoolbar.py:376
+msgid "Actual size"
+msgstr "Actual size"
+
+#: readtoolbar.py:394
+msgid "%"
+msgstr "%"
+
+#: readtoolbar.py:412
+msgid "Fullscreen"
+msgstr "Fullscreen"
