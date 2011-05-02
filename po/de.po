@@ -1,17 +1,23 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # This file is distributed under the same license as the PACKAGE package.
 # Fabian Affolter <fab@fedoraproject.org>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: xbook\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-29 17:36-0400\n"
-"PO-Revision-Date: 2008-11-12 15:48-0500\n"
-"Last-Translator: Rita Freudenberg <rita@freudenbergs.de>\n"
+"POT-Creation-Date: 2011-03-21 07:08-0400\n"
+"PO-Revision-Date: 2011-05-02 22:30+0200\n"
+"Last-Translator: Markus <m.slg@gmx.de>\n"
 "Language-Team: cvs@fedoraproject.org <fedora-trans-de@redhat.com>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0rc2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.1\n"
 "X-Poedit-Language: German\n"
 
 #: activity/activity.info:2 readactivity.py:130
@@ -84,7 +90,50 @@ msgstr "%"
 
 #: readtoolbar.py:412
 msgid "Fullscreen"
-msgstr "Vollanzeige"
+msgstr "Vollbild"
+
+#, python-format
+#~ msgid "Page %i of %i"
+#~ msgstr "Seite %i von %i"
+
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "<b>Title</b>:"
+#~ msgstr "<b>Titel</b>:"
+
+#~ msgid "<b>Details</b>:"
+#~ msgstr "<b>Details</b>:"
+
+#, python-format
+#~ msgid "Bookmark added by %(user)s %(time)s"
+#~ msgstr "Lesezeichen wurde von %(user)s %(time)s hinzugefügt"
+
+#~ msgid "Add notes for bookmark: "
+#~ msgstr "Füge Notizen für Lesezeichen hinzu: "
+
+#, python-format
+#~ msgid "%s's bookmark"
+#~ msgstr "%s's Lesezeichen"
+
+#, python-format
+#~ msgid "Bookmark for page %d"
+#~ msgstr "Lesezeichen für Seite %d"
+
+#~ msgid "Previous page"
+#~ msgstr "Voherige Seite"
+
+#~ msgid "Previous bookmark"
+#~ msgstr "Vorheriges Lesezeichen"
+
+#~ msgid "Next page"
+#~ msgstr "Nächste Seite"
+
+#~ msgid "Next bookmark"
+#~ msgstr "Nächstes Lesezeichen"
 
 #~ msgid "Read Activity"
 #~ msgstr "Lese-Aktivitäten"
