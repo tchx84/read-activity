@@ -6,81 +6,85 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-01 00:30-0500\n"
-"PO-Revision-Date: 2008-07-31 12:01+0200\n"
-"Last-Translator: GASHAYIJA Guillaume <gashayija2002@yahoo.com>\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
+"PO-Revision-Date: 2011-04-05 11:46+0200\n"
+"Last-Translator:  <jimmy@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: rw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.1\n"
 
-#: activity/activity.info:2
-#: readactivity.py:95
+#: activity/activity.info:2 readactivity.py:130
 msgid "Read"
 msgstr "Soma"
 
-#: readactivity.py:91
+#: readactivity.py:126
 msgid "Edit"
 msgstr "Hindura"
 
-#: readactivity.py:103
+#: readactivity.py:138
 msgid "View"
-msgstr "Irebero"
+msgstr "Reba"
 
-#: readtoolbar.py:67
+#: readactivity.py:225
+msgid "Choose document"
+msgstr "Hitamo inyandiko"
+
+#: readtoolbar.py:69
 msgid "Previous"
 msgstr "Ibibanziriza"
 
-#: readtoolbar.py:74
+#: readtoolbar.py:76
 msgid "Next"
 msgstr "Ibikurikira"
 
-#: readtoolbar.py:140
+#: readtoolbar.py:154
 msgid "Find first"
 msgstr "Shaka mbere"
 
-#: readtoolbar.py:146
+#: readtoolbar.py:160
 msgid "Find previous"
 msgstr "Shaka Ibibanziriza"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
 msgstr "Shaka ibikurikira"
 
-#: readtoolbar.py:160
+#: readtoolbar.py:174
 msgid "Back"
-msgstr "Inyuma"
+msgstr "Subira inyuma"
 
-#: readtoolbar.py:167
+#: readtoolbar.py:181
 msgid "Forward"
-msgstr "Imbere"
+msgstr "Jya imbere"
 
-#: readtoolbar.py:271
+#: readtoolbar.py:353
 msgid "Zoom out"
-msgstr "Kwagura"
+msgstr "Kugabanya ubunini"
 
-#: readtoolbar.py:277
+#: readtoolbar.py:359
 msgid "Zoom in"
-msgstr "Kugabanya"
+msgstr "Ongera ubunini"
 
-#: readtoolbar.py:283
+#: readtoolbar.py:365
 msgid "Zoom to width"
-msgstr "Agura ukigira kigari"
+msgstr "Agura mu bugari"
 
-#: readtoolbar.py:289
+#: readtoolbar.py:371
 msgid "Zoom to fit"
-msgstr "Agura ikntu ugira ngo gikwire ahantu"
+msgstr "Agura wuzuze"
 
-#: readtoolbar.py:294
+#: readtoolbar.py:376
 msgid "Actual size"
 msgstr "Ingano nyayo"
 
-#: readtoolbar.py:312
+#: readtoolbar.py:394
 msgid "%"
 msgstr "%"
 
-#: readtoolbar.py:330
+#: readtoolbar.py:412
 msgid "Fullscreen"
-msgstr "Ekarayose"
-
+msgstr "Ekara yose"

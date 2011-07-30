@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OLPC XBook\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-23 20:36+0000\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
 "PO-Revision-Date: 2007-12-25 04:05+0000\n"
 "Last-Translator: Subo Dong <dsbalex@gmail.com>\n"
 "Language-Team: Yuan CHAO <yuanchao@gmail.com>\n"
@@ -11,66 +11,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.0.2\n"
 
-#: activity/activity.info:2 readactivity.py:95
+#: activity/activity.info:2 readactivity.py:130
 msgid "Read"
 msgstr "阅读"
 
-#: readactivity.py:91
+#: readactivity.py:126
 msgid "Edit"
 msgstr "编辑"
 
-#: readactivity.py:99
+#: readactivity.py:138
 msgid "View"
 msgstr "查看"
 
-#: readtoolbar.py:67
+#: readactivity.py:225
+msgid "Choose document"
+msgstr ""
+
+#: readtoolbar.py:69
 msgid "Previous"
 msgstr "上一个"
 
-#: readtoolbar.py:74
+#: readtoolbar.py:76
 msgid "Next"
 msgstr "下一个"
 
-#: readtoolbar.py:160
-msgid "Back"
-msgstr "上一页"
-
-#: readtoolbar.py:167
-msgid "Forward"
-msgstr "下一页"
-
-#: readtoolbar.py:262
-msgid "Zoom out"
-msgstr "缩小"
-
-#: readtoolbar.py:268
-msgid "Zoom in"
-msgstr "放大"
-
-#: readtoolbar.py:274
-msgid "Zoom to width"
-msgstr "最适宽度"
-
-#: readtoolbar.py:280
-msgid "Zoom to fit"
-msgstr "页面大小"
-
-#: readtoolbar.py:285
-msgid "Actual size"
-msgstr "实际大小"
-
-#: readtoolbar.py:303
-msgid "%"
-msgstr "%"
-
-#: readtoolbar.py:140
+#: readtoolbar.py:154
 msgid "Find first"
 msgstr "寻找第一个"
 
-#: readtoolbar.py:146
+#: readtoolbar.py:160
 msgid "Find previous"
 msgstr "寻找前一个"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
 msgstr "寻找下一个"
+
+#: readtoolbar.py:174
+msgid "Back"
+msgstr "上一页"
+
+#: readtoolbar.py:181
+msgid "Forward"
+msgstr "下一页"
+
+#: readtoolbar.py:353
+msgid "Zoom out"
+msgstr "缩小"
+
+#: readtoolbar.py:359
+msgid "Zoom in"
+msgstr "放大"
+
+#: readtoolbar.py:365
+msgid "Zoom to width"
+msgstr "最适宽度"
+
+#: readtoolbar.py:371
+msgid "Zoom to fit"
+msgstr "页面大小"
+
+#: readtoolbar.py:376
+msgid "Actual size"
+msgstr "实际大小"
+
+#: readtoolbar.py:394
+msgid "%"
+msgstr "%"
+
+#: readtoolbar.py:412
+msgid "Fullscreen"
+msgstr ""

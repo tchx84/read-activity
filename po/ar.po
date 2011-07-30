@@ -6,82 +6,87 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xbook.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-01 00:30-0500\n"
-"PO-Revision-Date: 2008-03-11 12:08-0400\n"
-"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
+"PO-Revision-Date: 2011-02-06 22:47+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
-"n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 1.1.0rc2\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Pootle 2.0.3\n"
 
-#: activity/activity.info:2 readactivity.py:95
+#: activity/activity.info:2 readactivity.py:130
 msgid "Read"
 msgstr "اقرأ"
 
-#: readactivity.py:91
+#: readactivity.py:126
 msgid "Edit"
 msgstr "تحرير"
 
-#: readactivity.py:103
+#: readactivity.py:138
 msgid "View"
 msgstr "عرض"
 
-#: readtoolbar.py:67
+#: readactivity.py:225
+msgid "Choose document"
+msgstr "اختر مستند"
+
+#: readtoolbar.py:69
 msgid "Previous"
 msgstr "السابق"
 
-#: readtoolbar.py:74
+#: readtoolbar.py:76
 msgid "Next"
 msgstr "التالي"
 
-#: readtoolbar.py:140
+#: readtoolbar.py:154
 msgid "Find first"
 msgstr "أوجد الأول"
 
-#: readtoolbar.py:146
+#: readtoolbar.py:160
 msgid "Find previous"
 msgstr "أوجد السابق"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
 msgstr "أوجد التالي"
 
-#: readtoolbar.py:160
+#: readtoolbar.py:174
 msgid "Back"
 msgstr "للخلف"
 
-#: readtoolbar.py:167
+#: readtoolbar.py:181
 msgid "Forward"
 msgstr "للأمام"
 
-#: readtoolbar.py:271
+#: readtoolbar.py:353
 msgid "Zoom out"
 msgstr "صغّر"
 
-#: readtoolbar.py:277
+#: readtoolbar.py:359
 msgid "Zoom in"
 msgstr "كبّر"
 
-#: readtoolbar.py:283
+#: readtoolbar.py:365
 msgid "Zoom to width"
 msgstr "لائِم العرض"
 
-#: readtoolbar.py:289
+#: readtoolbar.py:371
 msgid "Zoom to fit"
 msgstr "لائِم الصفحة"
 
-#: readtoolbar.py:294
+#: readtoolbar.py:376
 msgid "Actual size"
 msgstr "المقاس الأصلي"
 
-#: readtoolbar.py:312
+#: readtoolbar.py:394
 msgid "%"
 msgstr "%"
 
-#: readtoolbar.py:330
+#: readtoolbar.py:412
 msgid "Fullscreen"
 msgstr "ملء الشاشة"
 

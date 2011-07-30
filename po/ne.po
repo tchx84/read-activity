@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-09 00:31-0400\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
 "PO-Revision-Date: 2009-02-25 23:58-0500\n"
 "Last-Translator: Shaksham Thapa <shaksham@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,75 +15,75 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0rc2\n"
 
-#: activity/activity.info:2 readactivity.py:129
+#: activity/activity.info:2 readactivity.py:130
 msgid "Read"
 msgstr "पढ"
 
-#: readactivity.py:125
+#: readactivity.py:126
 msgid "Edit"
 msgstr "सम्पादन"
 
-#: readactivity.py:137
+#: readactivity.py:138
 msgid "View"
 msgstr "दृश्य"
 
-#: readactivity.py:223
+#: readactivity.py:225
 msgid "Choose document"
 msgstr "कागतपत्र छान"
 
-#: readtoolbar.py:67
+#: readtoolbar.py:69
 msgid "Previous"
 msgstr "पहिलाको"
 
-#: readtoolbar.py:74
+#: readtoolbar.py:76
 msgid "Next"
 msgstr "यसपछिको"
 
-#: readtoolbar.py:140
+#: readtoolbar.py:154
 msgid "Find first"
 msgstr "पहिलो भेट्टाउ"
 
-#: readtoolbar.py:146
+#: readtoolbar.py:160
 msgid "Find previous"
 msgstr "पहिलाको भेट्टाउ"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
 msgstr "यसपछिको भेट्टाउ"
 
-#: readtoolbar.py:160
+#: readtoolbar.py:174
 msgid "Back"
 msgstr "पछाडि"
 
-#: readtoolbar.py:167
+#: readtoolbar.py:181
 msgid "Forward"
 msgstr "अगाडि"
 
-#: readtoolbar.py:271
+#: readtoolbar.py:353
 msgid "Zoom out"
 msgstr "टाढाबाट हेर"
 
-#: readtoolbar.py:277
+#: readtoolbar.py:359
 msgid "Zoom in"
 msgstr "नजिकबाट हेर्ने"
 
-#: readtoolbar.py:283
+#: readtoolbar.py:365
 msgid "Zoom to width"
 msgstr "पूरा चौडाई"
 
-#: readtoolbar.py:289
+#: readtoolbar.py:371
 msgid "Zoom to fit"
 msgstr "सबै हेर्ने"
 
-#: readtoolbar.py:294
+#: readtoolbar.py:376
 msgid "Actual size"
 msgstr "वास्तविक परिमाण"
 
-#: readtoolbar.py:312
+#: readtoolbar.py:394
 msgid "%"
 msgstr "%"
 
-#: readtoolbar.py:330
+#: readtoolbar.py:412
 msgid "Fullscreen"
 msgstr "पूरा स्कि्न"
 

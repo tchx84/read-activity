@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-09 00:31-0400\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
 "PO-Revision-Date: 2009-02-20 14:18-0500\n"
 "Last-Translator: Eduardo H. Silva <HoboPrimate@gmail.com>\n"
 "Language-Team: Portuguese <translation-team-pt@lists.sourceforge.net>\n"
@@ -16,75 +16,75 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.1.0rc2\n"
 
-#: activity/activity.info:2 readactivity.py:129
+#: activity/activity.info:2 readactivity.py:130
 msgid "Read"
 msgstr "Ler"
 
-#: readactivity.py:125
+#: readactivity.py:126
 msgid "Edit"
 msgstr "Editar"
 
-#: readactivity.py:137
+#: readactivity.py:138
 msgid "View"
 msgstr "Ver"
 
-#: readactivity.py:223
+#: readactivity.py:225
 msgid "Choose document"
 msgstr "Escolhe o documento"
 
-#: readtoolbar.py:67
+#: readtoolbar.py:69
 msgid "Previous"
 msgstr "Anterior"
 
-#: readtoolbar.py:74
+#: readtoolbar.py:76
 msgid "Next"
 msgstr "Seguinte"
 
-#: readtoolbar.py:140
+#: readtoolbar.py:154
 msgid "Find first"
 msgstr "Encontrar o primeiro"
 
-#: readtoolbar.py:146
+#: readtoolbar.py:160
 msgid "Find previous"
 msgstr "Encontrar o anterior"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
 msgstr "Encontrar o próximo"
 
-#: readtoolbar.py:160
+#: readtoolbar.py:174
 msgid "Back"
 msgstr "Voltar"
 
-#: readtoolbar.py:167
+#: readtoolbar.py:181
 msgid "Forward"
 msgstr "Avançar"
 
-#: readtoolbar.py:271
+#: readtoolbar.py:353
 msgid "Zoom out"
 msgstr "Afastar zoom"
 
-#: readtoolbar.py:277
+#: readtoolbar.py:359
 msgid "Zoom in"
 msgstr "Aproximar zoom"
 
-#: readtoolbar.py:283
+#: readtoolbar.py:365
 msgid "Zoom to width"
 msgstr "Zoom até à largura"
 
-#: readtoolbar.py:289
+#: readtoolbar.py:371
 msgid "Zoom to fit"
 msgstr "Zoom até caber"
 
-#: readtoolbar.py:294
+#: readtoolbar.py:376
 msgid "Actual size"
 msgstr "Tamanho real"
 
-#: readtoolbar.py:312
+#: readtoolbar.py:394
 msgid "%"
 msgstr "%"
 
-#: readtoolbar.py:330
+#: readtoolbar.py:412
 msgid "Fullscreen"
 msgstr "Ecrã completo"
 

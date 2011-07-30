@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-09 00:31-0400\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
 "PO-Revision-Date: 2008-12-08 08:47-0500\n"
 "Last-Translator: Denis Oštir <denis.ostir@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,74 +15,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0rc2\n"
 
-#: activity/activity.info:2 readactivity.py:129
+#: activity/activity.info:2 readactivity.py:130
 msgid "Read"
 msgstr "Beri"
 
-#: readactivity.py:125
+#: readactivity.py:126
 msgid "Edit"
 msgstr "Urejanje"
 
-#: readactivity.py:137
+#: readactivity.py:138
 msgid "View"
 msgstr "Pogled"
 
-#: readactivity.py:223
+#: readactivity.py:225
 msgid "Choose document"
 msgstr "Izberi dokument"
 
-#: readtoolbar.py:67
+#: readtoolbar.py:69
 msgid "Previous"
 msgstr "Prejšnji"
 
-#: readtoolbar.py:74
+#: readtoolbar.py:76
 msgid "Next"
 msgstr "Naslednji"
 
-#: readtoolbar.py:140
+#: readtoolbar.py:154
 msgid "Find first"
 msgstr "Najdi prvega"
 
-#: readtoolbar.py:146
+#: readtoolbar.py:160
 msgid "Find previous"
 msgstr "Najdi prejšnjega"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
 msgstr "Najdi naslednjega"
 
-#: readtoolbar.py:160
+#: readtoolbar.py:174
 msgid "Back"
 msgstr "Nazaj"
 
-#: readtoolbar.py:167
+#: readtoolbar.py:181
 msgid "Forward"
 msgstr "Naprej"
 
-#: readtoolbar.py:271
+#: readtoolbar.py:353
 msgid "Zoom out"
 msgstr "Povečaj"
 
-#: readtoolbar.py:277
+#: readtoolbar.py:359
 msgid "Zoom in"
 msgstr "Pomanjšaj"
 
-#: readtoolbar.py:283
+#: readtoolbar.py:365
 msgid "Zoom to width"
 msgstr "Povečaj do širine"
 
-#: readtoolbar.py:289
+#: readtoolbar.py:371
 msgid "Zoom to fit"
 msgstr "Povečaj da ustreza"
 
-#: readtoolbar.py:294
+#: readtoolbar.py:376
 msgid "Actual size"
 msgstr "Normalna velikost"
 
-#: readtoolbar.py:312
+#: readtoolbar.py:394
 msgid "%"
 msgstr "%"
 
-#: readtoolbar.py:330
+#: readtoolbar.py:412
 msgid "Fullscreen"
 msgstr "Cel zaslon"

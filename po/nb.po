@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-01 00:30-0500\n"
+"POT-Creation-Date: 2009-04-29 17:36-0400\n"
 "PO-Revision-Date: 2008-07-23 16:45+0100\n"
 "Last-Translator: Kent Dahl <kentda@pvv.org>\n"
 "Language-Team: Norwegian <i18n-no@lister.ping.uio.no>\n"
@@ -15,74 +15,77 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.1.1rc4\n"
 
-#: activity/activity.info:2
-#: readactivity.py:95
+#: activity/activity.info:2 readactivity.py:130
 msgid "Read"
 msgstr "Les"
 
-#: readactivity.py:91
+#: readactivity.py:126
 msgid "Edit"
 msgstr "Endre"
 
-#: readactivity.py:103
+#: readactivity.py:138
 #, fuzzy
 msgid "View"
 msgstr "Visning"
 
-#: readtoolbar.py:67
+#: readactivity.py:225
+msgid "Choose document"
+msgstr ""
+
+#: readtoolbar.py:69
 msgid "Previous"
 msgstr "Forrige"
 
-#: readtoolbar.py:74
+#: readtoolbar.py:76
 msgid "Next"
 msgstr "Neste"
 
-#: readtoolbar.py:140
+#: readtoolbar.py:154
 msgid "Find first"
 msgstr "Finn første"
 
-#: readtoolbar.py:146
+#: readtoolbar.py:160
 msgid "Find previous"
 msgstr "Finn forrige"
 
-#: readtoolbar.py:148
+#: readtoolbar.py:162
 msgid "Find next"
 msgstr "Finn neste"
 
-#: readtoolbar.py:160
+#: readtoolbar.py:174
 msgid "Back"
 msgstr "Tilbake"
 
-#: readtoolbar.py:167
+#: readtoolbar.py:181
 msgid "Forward"
 msgstr "Fremover"
 
-#: readtoolbar.py:271
+#: readtoolbar.py:353
 msgid "Zoom out"
 msgstr "Forminsk"
 
-#: readtoolbar.py:277
+#: readtoolbar.py:359
 msgid "Zoom in"
 msgstr "Forstørr"
 
-#: readtoolbar.py:283
+#: readtoolbar.py:365
 #, fuzzy
 msgid "Zoom to width"
 msgstr "Tilpass til bredden"
 
-#: readtoolbar.py:289
+#: readtoolbar.py:371
 #, fuzzy
 msgid "Zoom to fit"
 msgstr "Tilpass til størrelsen"
 
-#: readtoolbar.py:294
+#: readtoolbar.py:376
 msgid "Actual size"
 msgstr "Faktisk størrelse"
 
-#: readtoolbar.py:312
+#: readtoolbar.py:394
 msgid "%"
 msgstr ""
 
-#: readtoolbar.py:330
+#: readtoolbar.py:412
 msgid "Fullscreen"
 msgstr "Fullskjerm"
