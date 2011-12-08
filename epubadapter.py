@@ -1,4 +1,4 @@
-from gi.repository import GObject
+import gobject
 import logging
 
 import epubview
@@ -19,7 +19,7 @@ class EpubViewer(epubview.EpubView):
         self.connect('selection-changed',
                             activity._view_selection_changed_cb)
 
-        activity._hbox.pack_start(self, True, True, 0)
+        activity._hbox.pack_start(self, expand=True, fill=True)
         self.show_all()
         # text to speech initialization
         self.current_word = 0
@@ -122,7 +122,7 @@ class EpubViewer(epubview.EpubView):
         if self._ready:
             self._load_page(n)
         else:
-            GObject.timeout_add(200, self._try_load_page, n)
+            gobject.timeout_add(200, self._try_load_page, n)
 
     def get_current_page(self):
         return int(self._loaded_page - 1)

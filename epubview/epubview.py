@@ -15,9 +15,8 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-from gi.repository import Gtk
-from gi.repository import GObject
-from gi.repository import Gdk
+import gtk
+import gobject
 import widgets
 
 import os.path
@@ -35,23 +34,23 @@ LOADING_HTML = '''
 '''
 
 
-class _View(Gtk.HBox):
+class _View(gtk.HBox):
 
     __gproperties__ = {
-        'scale': (GObject.TYPE_FLOAT, 'the zoom level',
+        'scale': (gobject.TYPE_FLOAT, 'the zoom level',
                    'the zoom level of the widget',
-                   0.5, 4.0, 1.0, GObject.PARAM_READWRITE),
+                   0.5, 4.0, 1.0, gobject.PARAM_READWRITE),
     }
     __gsignals__ = {
-        'page-changed': (GObject.SignalFlags.RUN_FIRST, GObject.TYPE_NONE,
+        'page-changed': (gobject.SIGNAL_RUN_FIRST, gobject.TYPE_NONE,
                 ([int, int])),
-        'selection-changed': (GObject.SignalFlags.RUN_FIRST, GObject.TYPE_NONE,
+        'selection-changed': (gobject.SIGNAL_RUN_FIRST, gobject.TYPE_NONE,
                               ([])),
     }
 
     def __init__(self):
-        GObject.threads_init()
-        Gtk.HBox.__init__(self)
+        gobject.threads_init()
+        gtk.HBox.__init__(self)
 
         self.connect("destroy", self._destroy_cb)
 
@@ -71,7 +70,7 @@ class _View(Gtk.HBox):
         self.__in_search = False
         self.__search_fwd = True
 
-        self._sw = Gtk.ScrolledWindow()
+        self._sw = gtk.ScrolledWindow()
         self._view = widgets._WebView()
         self._view.load_string(LOADING_HTML, 'text/html', 'utf-8', '/')
         settings = self._view.get_settings()
@@ -89,29 +88,27 @@ class _View(Gtk.HBox):
                 self._view_populate_popup_cb)
 
         self._sw.add(self._view)
-        self._sw.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.NEVER)
+        self._sw.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_NEVER)
         self._v_vscrollbar = self._sw.get_vscrollbar()
         self._v_scrollbar_value_changed_cb_id = \
                 self._v_vscrollbar.connect('value-changed', \
                 self._v_scrollbar_value_changed_cb)
-        self._scrollbar = Gtk.VScrollbar()
-        # TODO
-        # self._scrollbar.set_update_policy(Gtk.UPDATE_DISCONTINUOUS)
+        self._scrollbar = gtk.VScrollbar()
+        self._scrollbar.set_update_policy(gtk.UPDATE_DISCONTINUOUS)
         self._scrollbar_change_value_cb_id = \
                 self._scrollbar.connect('change-value', \
                 self._scrollbar_change_value_cb)
-        self.pack_start(self._sw, True, True, 0)
-        self.pack_start(self._scrollbar, False, False, 0)
+        self.pack_start(self._sw, expand=True, fill=True)
+        self.pack_start(self._scrollbar, expand=False, fill=False)
 
-        self._view.set_can_default(True)
-        self._view.set_can_focus(True)
+        self._view.set_flags(gtk.CAN_DEFAULT | gtk.CAN_FOCUS)
 
     def set_document(self, epubdocumentinstance):
         '''
         Sets document (should be a Epub instance)
         '''
         self._epub = epubdocumentinstance
-        GObject.idle_add(self._paginate)
+        gobject.idle_add(self._paginate)
 
     def do_get_property(self, property):
         if property.name == 'has-selection':
@@ -251,36 +248,36 @@ class _View(Gtk.HBox):
         Scrolls through the pages.
         Scrolling is horizontal if horizontal is set to True
         Valid scrolltypes are:
-        Gtk.ScrollType.PAGE_BACKWARD, Gtk.ScrollType.PAGE_FORWARD,
-        Gtk.ScrollType.STEP_BACKWARD, Gtk.ScrollType.STEP_FORWARD
-        Gtk.ScrollType.STEP_START and Gtk.ScrollType.STEP_STOP
+        gtk.SCROLL_PAGE_BACKWARD, gtk.SCROLL_PAGE_FORWARD,
+        gtk.SCROLL_STEP_BACKWARD, gtk.SCROLL_STEP_FORWARD
+        gtk.SCROLL_STEP_START and gtk.SCROLL_STEP_STOP
         '''
-        if scrolltype == Gtk.ScrollType.PAGE_BACKWARD:
+        if scrolltype == gtk.SCROLL_PAGE_BACKWARD:
             self.__going_back = True
             self.__going_fwd = False
             if not self._do_page_transition():
-                self._view.move_cursor(Gtk.MovementStep.PAGES, -1)
-        elif scrolltype == Gtk.ScrollType.PAGE_FORWARD:
+                self._view.move_cursor(gtk.MOVEMENT_PAGES, -1)
+        elif scrolltype == gtk.SCROLL_PAGE_FORWARD:
             self.__going_back = False
             self.__going_fwd = True
             if not self._do_page_transition():
-                self._view.move_cursor(Gtk.MovementStep.PAGES, 1)
-        elif scrolltype == Gtk.ScrollType.STEP_BACKWARD:
+                self._view.move_cursor(gtk.MOVEMENT_PAGES, 1)
+        elif scrolltype == gtk.SCROLL_STEP_BACKWARD:
             self.__going_fwd = False
             self.__going_back = True
             if not self._do_page_transition():
-                self._view.move_cursor(Gtk.MovementStep.DISPLAY_LINES, -1)
-        elif scrolltype == Gtk.ScrollType.STEP_FORWARD:
+                self._view.move_cursor(gtk.MOVEMENT_DISPLAY_LINES, -1)
+        elif scrolltype == gtk.SCROLL_STEP_FORWARD:
             self.__going_fwd = True
             self.__going_back = False
             if not self._do_page_transition():
-                self._view.move_cursor(Gtk.MovementStep.DISPLAY_LINES, 1)
-        elif scrolltype == Gtk.ScrollType.START:
+                self._view.move_cursor(gtk.MOVEMENT_DISPLAY_LINES, 1)
+        elif scrolltype == gtk.SCROLL_START:
             self.__going_back = True
             self.__going_fwd = False
             if not self._do_page_transition():
                 self.set_current_page(1)
-        elif scrolltype == Gtk.ScrollType.END:
+        elif scrolltype == gtk.SCROLL_END:
             self.__going_back = False
             self.__going_fwd = True
             if not self._do_page_transition():
@@ -363,7 +360,7 @@ class _View(Gtk.HBox):
                                  | view.can_cut_clipboard())
 
     def _view_keypress_event_cb(self, view, event):
-        name = Gdk.keyval_name(event.keyval)
+        name = gtk.gdk.keyval_name(event.keyval)
         if name == 'Page_Down' or name == 'Down':
             self.__going_back = False
             self.__going_fwd = True
@@ -374,10 +371,10 @@ class _View(Gtk.HBox):
         self._do_page_transition()
 
     def _view_scroll_event_cb(self, view, event):
-        if event.direction == Gdk.ScrollDirection.DOWN:
+        if event.direction == gtk.gdk.SCROLL_DOWN:
             self.__going_back = False
             self.__going_fwd = True
-        elif event.direction == Gdk.ScrollDirection.UP:
+        elif event.direction == gtk.gdk.SCROLL_UP:
             self.__going_back = True
             self.__going_fwd = False
 
@@ -401,7 +398,7 @@ class _View(Gtk.HBox):
     def _view_load_finished_cb(self, v, frame):
         # Normally the line below would not be required - ugly workaround for
         # possible Webkit bug. See : https://bugs.launchpad.net/bugs/483231
-        self._sw.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.NEVER)
+        self._sw.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_NEVER)
 
         filename = self._view.props.uri.replace('file://', '')
         if os.path.exists(filename.replace('xhtml', 'xml')):
@@ -629,19 +626,19 @@ class _View(Gtk.HBox):
         self._load_page(pageno)
 
     def _scrollbar_change_value_cb(self, range, scrolltype, value):
-        if scrolltype == Gtk.ScrollType.STEP_FORWARD:
+        if scrolltype == gtk.SCROLL_STEP_FORWARD:
             self.__going_fwd = True
             self.__going_back = False
             if not self._do_page_transition():
-                self._view.move_cursor(Gtk.MovementStep.DISPLAY_LINES, 1)
-        elif scrolltype == Gtk.ScrollType.STEP_BACKWARD:
+                self._view.move_cursor(gtk.MOVEMENT_DISPLAY_LINES, 1)
+        elif scrolltype == gtk.SCROLL_STEP_BACKWARD:
             self.__going_fwd = False
             self.__going_back = True
             if not self._do_page_transition():
-                self._view.move_cursor(Gtk.MovementStep.DISPLAY_LINES, -1)
-        elif scrolltype == Gtk.ScrollType.JUMP or \
-            scrolltype == Gtk.ScrollType.PAGE_FORWARD or \
-                scrolltype == Gtk.ScrollType.PAGE_BACKWARD:
+                self._view.move_cursor(gtk.MOVEMENT_DISPLAY_LINES, -1)
+        elif scrolltype == gtk.SCROLL_JUMP or \
+            scrolltype == gtk.SCROLL_PAGE_FORWARD or \
+                scrolltype == gtk.SCROLL_PAGE_BACKWARD:
             if value > self._scrollbar.props.adjustment.props.upper:
                 self._load_page(self._pagecount)
             else:

@@ -14,7 +14,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-from gi.repository import Gtk
+import gtk
 import time
 import threading
 import speechd
@@ -105,12 +105,12 @@ class EspeakThread(threading.Thread):
         if type == speechd.CallbackType.INDEX_MARK:
             mark = kargs['index_mark']
             word_count = int(mark)
-            Gtk.gdk.threads_enter()
+            gtk.gdk.threads_enter()
             speech.highlight_cb(word_count)
-            Gtk.gdk.threads_leave()
+            gtk.gdk.threads_leave()
         elif type == speechd.CallbackType.END:
-            Gtk.gdk.threads_enter()
+            gtk.gdk.threads_enter()
             speech.reset_cb()
-            Gtk.gdk.threads_leave()
+            gtk.gdk.threads_leave()
             global done
             done = True

@@ -2,48 +2,47 @@
 
 # Stolen from the PyGTK demo module by Maik Hertha <maik.hertha@berlin.de>
 
-from gi.repository import GObject
-from gi.repository import Gtk
-from gi.repository import Gdk
+import gtk
+import gobject
 
-from sugar3.graphics import style
-from sugar3.graphics.toolbutton import ToolButton
+from sugar.graphics import style
+from sugar.graphics.toolbutton import ToolButton
 
 from gettext import gettext as _
 import cjson
 
 
-class BaseReadDialog(Gtk.Window):
+class BaseReadDialog(gtk.Window):
 
     def __init__(self, parent_xid, dialog_title):
-        Gtk.Window.__init__(self)
+        gtk.Window.__init__(self)
 
         self.connect('realize', self.__realize_cb)
 
         self.set_decorated(False)
-        self.set_position(Gtk.WindowPosition.CENTER_ALWAYS)
+        self.set_position(gtk.WIN_POS_CENTER_ALWAYS)
         self.set_border_width(style.LINE_WIDTH)
 
-        width = Gdk.Screen.width() - style.GRID_CELL_SIZE * 4
-        height = Gdk.Screen.height() - style.GRID_CELL_SIZE * 4
+        width = gtk.gdk.screen_width() - style.GRID_CELL_SIZE * 4
+        height = gtk.gdk.screen_height() - style.GRID_CELL_SIZE * 4
         self.set_size_request(width, height)
 
         self._parent_window_xid = parent_xid
 
-        _vbox = Gtk.VBox(spacing=2)
+        _vbox = gtk.VBox(spacing=2)
         self.add(_vbox)
 
-        self.toolbar = Gtk.Toolbar()
-        label = Gtk.Label()
+        self.toolbar = gtk.Toolbar()
+        label = gtk.Label()
         label.set_markup('<b>  %s</b>' % dialog_title)
         label.set_alignment(0, 0.5)
-        tool_item = Gtk.ToolItem()
+        tool_item = gtk.ToolItem()
         tool_item.add(label)
         label.show()
         self.toolbar.insert(tool_item, -1)
         tool_item.show()
 
-        separator = Gtk.SeparatorToolItem()
+        separator = gtk.SeparatorToolItem()
         separator.props.draw = False
         separator.set_expand(True)
         self.toolbar.insert(separator, -1)
@@ -60,11 +59,11 @@ class BaseReadDialog(Gtk.Window):
         accept.show()
         self.toolbar.insert(accept, -1)
 
-        _vbox.pack_start(self.toolbar, False, True, 0)
+        _vbox.pack_start(self.toolbar, expand=False)
         self.toolbar.show()
 
-        self._event_box = Gtk.EventBox()
-        _vbox.pack_start(self._event_box, True, True, 0)
+        self._event_box = gtk.EventBox()
+        _vbox.pack_start(self._event_box, expand=True, fill=True)
         self._canvas = None
 
     def set_canvas(self, canvas):
@@ -74,21 +73,21 @@ class BaseReadDialog(Gtk.Window):
         self._canvas = canvas
 
     def __realize_cb(self, widget):
-        self.window.set_type_hint(Gdk.WindowType._HINT_DIALOG)
+        self.window.set_type_hint(gtk.gdk.WINDOW_TYPE_HINT_DIALOG)
         self.window.set_accept_focus(True)
 
-        parent = Gdk.window_foreign_new(self._parent_window_xid)
+        parent = gtk.gdk.window_foreign_new(self._parent_window_xid)
         self.window.set_transient_for(parent)
 
-        self.modify_bg(Gtk.StateType.NORMAL,
+        self.modify_bg(gtk.STATE_NORMAL,
                             style.COLOR_WHITE.get_gdk_color())
 
         if self._canvas is not None:
-            self._canvas.modify_bg(Gtk.StateType.NORMAL,
+            self._canvas.modify_bg(gtk.STATE_NORMAL,
                 style.COLOR_WHITE.get_gdk_color())
             self._canvas.grab_focus()
 
-        self._event_box.modify_bg(Gtk.StateType.NORMAL,
+        self._event_box.modify_bg(gtk.STATE_NORMAL,
                 style.COLOR_WHITE.get_gdk_color())
 
     def accept_clicked_cb(self, widget):
@@ -103,57 +102,57 @@ class BookmarkDialog(BaseReadDialog):
         self._sidebarinstance = sidebarinstance
         self._page = page
 
-        vbox = Gtk.VBox()
-        thbox = Gtk.HBox()
-        vbox.pack_start(thbox, False, False, 0)
+        vbox = gtk.VBox()
+        thbox = gtk.HBox()
+        vbox.pack_start(thbox, expand=False, fill=False)
         thbox.set_border_width(style.DEFAULT_SPACING * 2)
         thbox.set_spacing(style.DEFAULT_SPACING)
         thbox.show()
 
-        label_title = Gtk.Label(_('<b>Title</b>:'))
+        label_title = gtk.Label(_('<b>Title</b>:'))
         label_title.set_use_markup(True)
         label_title.set_alignment(1, 0.5)
-        label_title.modify_fg(Gtk.StateType.NORMAL,
+        label_title.modify_fg(gtk.STATE_NORMAL,
                             style.COLOR_SELECTION_GREY.get_gdk_color())
-        thbox.pack_start(label_title, False, False, 0)
+        thbox.pack_start(label_title, expand=False, fill=False)
         label_title.show()
 
-        self._title_entry = Gtk.Entry()
-        self._title_entry.modify_bg(Gtk.StateType.INSENSITIVE,
+        self._title_entry = gtk.Entry()
+        self._title_entry.modify_bg(gtk.STATE_INSENSITIVE,
                             style.COLOR_WHITE.get_gdk_color())
-        self._title_entry.modify_base(Gtk.StateType.INSENSITIVE,
+        self._title_entry.modify_base(gtk.STATE_INSENSITIVE,
                             style.COLOR_WHITE.get_gdk_color())
-        self._title_entry.set_size_request(int(Gdk.Screen.width() / 3), -1)
+        self._title_entry.set_size_request(int(gtk.gdk.screen_width() / 3), -1)
 
-        thbox.pack_start(self._title_entry, False, False, 0)
+        thbox.pack_start(self._title_entry, expand=False, fill=False)
         self._title_entry.show()
         if bookmark_title is not None:
             self._title_entry.set_text(bookmark_title)
 
-        cvbox = Gtk.VBox()
-        vbox.pack_start(cvbox, True, True, 0)
+        cvbox = gtk.VBox()
+        vbox.pack_start(cvbox, expand=True, fill=True)
         cvbox.set_border_width(style.DEFAULT_SPACING * 2)
         cvbox.set_spacing(style.DEFAULT_SPACING / 2)
         cvbox.show()
 
-        label_content = Gtk.Label(_('<b>Details</b>:'))
+        label_content = gtk.Label(_('<b>Details</b>:'))
         label_content.set_use_markup(True)
         label_content.set_alignment(0, 0)
-        label_content.modify_fg(Gtk.StateType.NORMAL,
+        label_content.modify_fg(gtk.STATE_NORMAL,
                             style.COLOR_SELECTION_GREY.get_gdk_color())
-        cvbox.pack_start(label_content, False, False, 0)
+        cvbox.pack_start(label_content, expand=False, fill=False)
         label_content.show()
 
-        sw = Gtk.ScrolledWindow()
-        sw.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+        sw = gtk.ScrolledWindow()
+        sw.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
 
-        self._content_entry = Gtk.TextView()
-        self._content_entry.set_wrap_mode(Gtk.WrapMode.WORD)
+        self._content_entry = gtk.TextView()
+        self._content_entry.set_wrap_mode(gtk.WRAP_WORD)
 
         sw.add(self._content_entry)
-        sw.set_shadow_type(Gtk.ShadowType.ETCHED_IN)
+        sw.set_shadow_type(gtk.SHADOW_ETCHED_IN)
 
-        cvbox.pack_start(sw, True, True, 0)
+        cvbox.pack_start(sw, expand=True, fill=True)
         self._content_entry.show()
         if bookmark_content is not None:
             buffer = self._content_entry.get_buffer()

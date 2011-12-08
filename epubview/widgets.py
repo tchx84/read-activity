@@ -1,9 +1,10 @@
-from gi.repository import WebKit
+import webkit
+import gtk
 
 
-class _WebView(WebKit.WebView):
+class _WebView(webkit.WebView):
     def __init__(self):
-        WebKit.WebView.__init__(self)
+        webkit.WebView.__init__(self)
 
     def get_page_height(self):
         '''
