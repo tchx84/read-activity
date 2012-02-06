@@ -562,11 +562,14 @@ class _View(gtk.HBox):
             #TODO: Cause an exception
             return
 
+        if self._loaded_page == pageno:
+            return
+
         self._on_page_changed(self._loaded_page, pageno)
         filename = self._paginator.get_file_for_pageno(pageno)
         filename = filename.replace('file://', '')
         if filename != self._loaded_filename:
-            #self._loaded_filename = filename
+            self._loaded_filename = filename
 
             """
             TODO: disabled because javascript can't be executed
