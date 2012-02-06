@@ -583,7 +583,7 @@ class _View(gtk.HBox):
 
             if filename.endswith('xml'):
                 dest = filename.replace('xml', 'xhtml')
-                shutil.copy(filename, dest)
+                os.symlink(filename, dest)
                 self._view.open('file://' + dest)
             else:
                 self._view.open('file://' + filename)
