@@ -560,6 +560,7 @@ class _View(gtk.HBox):
 
         self._on_page_changed(self._loaded_page, pageno)
         filename = self._paginator.get_file_for_pageno(pageno)
+        filename = filename.replace('file://', '')
         if filename != self._loaded_filename:
             #self._loaded_filename = filename
 
@@ -575,11 +576,10 @@ class _View(gtk.HBox):
 
             if filename.endswith('xml'):
                 dest = filename.replace('xml', 'xhtml')
-                shutil.copy(filename.replace('file://', ''),
-                        dest.replace('file://', ''))
-                self._view.open(dest)
+                shutil.copy(filename, dest)
+                self._view.open('file://' + dest)
             else:
-                self._view.open(filename)
+                self._view.open('file://' + filename)
         else:
             self._scroll_page()
 
